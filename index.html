@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1 minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <title>かたつむり大作戦！ - 交通安全活動</title>
+    <meta name="description" content='ゆっくり歩く"かたつむり"のように、安全第一にサッカー観戦を楽しむ活動「かたつむり大作戦！」です。'>
+    <meta name="keywords" content="かたつむり大作戦,交通安全,サッカー,車遠征">
+    <meta property="og:title" content="私は交通安全活動の「かたつむり大作戦！」に賛同します！">
+    <meta property="og:site_name" content="かたつむり大作戦！ - 交通安全活動">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://katatsumuri-d.com/">
+    <meta property="og:image" content="http://katatsumuri-d.com/img/ogpimg.jpg">
+    <meta property="og:description" content='ゆっくり歩く"かたつむり"のように、安全第一にサッカー観戦を楽しむ活動「かたつむり大作戦！」です。'>
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@sanga_saporen">
+    <meta name="twitter:creator" content="@sanga_saporen">
+    <meta name="twitter:title" content="かたつむり大作戦！ - 交通安全活動">
+    <style>
+        body {
+            font-family: "ヒラギノ角ゴ Pro W3", メイリオ, Osaka, Arial, Verdana, "ＭＳ Ｐゴシック", sans-serif
+        }
+        
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            color: white
+        }
+        
+        body {
+            background: #009d41;
+            background-position: center;
+            background-size: contain;
+            background-attachment: fixed
+        }
+        
+        a {
+            color: white;
+            text-decoration: none
+        }
+        
+        header {
+            display: table;
+            margin: 0;
+            height: 100%;
+            min-height: 100%;
+            width: 100%;
+            text-align: center
+        }
+        
+        #wrapper {
+            max-width: 850px;
+            margin: auto
+        }
+        
+        #velttext {
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+            margin: 0
+        }
+        
+        velttext a {
+            -webkit-transition: all .7s ease-in-out;
+            -moz-transition: all .7s ease-in-out;
+            -o-transition: all .7s ease-in-out;
+            -ms-transition: all .7s ease-in-out;
+            transition: all .7s ease-in-out
+        }
+        
+        h2 {
+            padding-top: 0;
+            text-align: center
+        }
+        
+        #twitter {
+            display: inline-block
+        }
+        
+        footer,
+        #share,
+        #twitterp {
+            text-align: center
+        }
+        
+        #share ul {
+            margin: 0;
+            padding: 0
+        }
+        
+        #share ul li {
+            display: inline-block;
+            width: 20%
+        }
+        
+        nav {
+            background: rgba(80, 80, 80, 1);
+            margin: 0;
+            height: 60px;
+            width: 100%;
+            text-align: right
+        }
+        
+        nav ul li {
+            display: inline-block;
+            padding-right: 20px
+        }
+        
+        .fixed {
+            position: fixed;
+            top: 0;
+            z-index: 1;
+            margin: 0;
+            width: 100%;
+            text-align: right
+        }
+        
+        .btn {
+            display: inline-block;
+            width: 200px;
+            padding: 10px;
+            background: #fff;
+            border-radius: 25px;
+            margin: auto
+        }
+        
+        .btn a {
+            color: black
+        }
+        
+        .logo img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            max-height: 450px
+        }
+        
+        .logo {
+            width: 100%;
+            height: 35%;
+            max-height: 450px;
+            margin: auto;
+            display: inline-block
+        }
+        
+        .logoimg {
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            -webkit-user-drag: none
+        }
+        
+        .navlogo {
+            margin-bottom: -60px;
+            height: 60px;
+            width: 120px
+        }
+        
+        .fixed div {
+            display: block;
+            position: fixed
+        }
+        
+        #twitter {
+            margin-top: 30px
+        }
+        
+        .navicon {
+            display: none
+        }
+        
+        @media screen and (max-width:879px) {
+            #wrapper {
+                padding: 0 30px 0 30px
+            }
+        }
+        
+        @media screen and (max-width:700px) {
+            nav ul {
+                height: 24px
+            }
+            .navicon {
+                display: block;
+                float: right;
+                position: absolute;
+                right: 10px;
+                margin-top: 10px;
+                width: 42px;
+                height: 42px
+            }
+            .navicon span {
+                display: block;
+                background: #fff;
+                width: 24px;
+                height: 2px;
+                position: absolute;
+                left: 9px;
+                transition: all .4s;
+                -webkit-transition: all .4s;
+                -moz-transition: all .4s
+            }
+            .fixed .navicon {
+                margin-top: 0;
+                top: 10px;
+                right: 10px
+            }
+            .navicon span:first-child {
+                top: 12px
+            }
+            .navicon span:nth-child(2) {
+                margin-top: -1px;
+                top: 50%
+            }
+            .navicon span:last-child {
+                bottom: 12px
+            }
+            .navicon.active span:first-child {
+                -webkit-transform: translateY(8px) rotate(45deg);
+                -moz-transform: translateY(8px) rotate(45deg);
+                -ms-transform: translateY(8px) rotate(45deg);
+                transform: translateY(8px) rotate(45deg)
+            }
+            .navicon.active span:nth-child(2) {
+                opacity: 0
+            }
+            .navicon.active span:last-child {
+                -webkit-transform: translateY(-8px) rotate(-45deg);
+                -moz-transform: translateY(-8px) rotate(-45deg);
+                -ms-transform: translateY(-8px) rotate(-45deg);
+                transform: translateY(-8px) rotate(-45deg)
+            }
+            nav ul {
+                -webkit-transition: height .15s .6s linear;
+                -o-transition: height .15s .6s linear;
+                -ms-transition: height .15s .6s linear;
+                transition: height .15s .6s linear;
+                margin-top: 60px;
+                height: 0;
+                background-color: rgba(80, 80, 80, 1)
+            }
+            nav ul.active {
+                -webkit-transition: height .15s linear;
+                -o-transition: height .15s linear;
+                -ms-transition: height .15s .6s linear;
+                transition: height .15s linear;
+                height: 60px
+            }
+            nav ul li {
+                margin-top: 5px;
+                -webkit-transform: translateY(-1200px);
+                -ms-transform: translateY(-1200px);
+                -o-transform: translateY(-1200px);
+                transform: translateY(-1200px);
+                -webkit-transition: transform .01s .65s;
+                -o-transition: transform .01s .65s;
+                transition: transform .01s .65s
+            }
+            nav ul li a {
+                -webkit-transition: opacity .6s;
+                -o-transition: opacity .6s;
+                -ms-transition: opacity .6s;
+                transition: opacity .6s;
+                opacity: 0
+            }
+            nav ul.active li {
+                -webkit-transform: translateY(0);
+                -ms-transform: translateY(0);
+                -o-transform: translateY(0);
+                transform: translateY(0);
+                -webkit-transition: transform .01s;
+                -o-transition: transform .01s;
+                transition: transform .01s
+            }
+            nav ul.active li a {
+                -webkit-transition: opacity .6s .2s;
+                -o-transition: opacity .6s .2s;
+                -ms-transition: opacity .6s .2s;
+                transition: opacity .6s .2s;
+                opacity: 1
+            }
+            #effect {
+                margin-top: 60px
+            }
+            #approval li,
+            #distribution li {
+                margin: 1em 0 1em 0
+            }
+        }
+        
+        @media screen and (max-width:339px) {
+            nav ul.active {
+                height: 90px
+            }
+            #effect {
+                margin-top: 90px
+            }
+        }
+        
+        @media screen and (max-width:399px) {
+            footer {
+                font-size: 12px
+            }
+        }
+        
+        #distribution a {
+            text-decoration: underline
+        }
+        
+        #approval a {
+            text-decoration: underline
+        }
+        
+        #share ul li a img,
+        #points img {
+            width: 100%;
+            height: auto;
+            margin: 0;
+            padding: 0
+        }
+        
+        .detail {
+            margin: 1.5em 0 0;
+            padding: 12px 18px;
+            border: 2px solid rgba(0, 0, 0, 0.1)
+        }
+        
+        .detail li,
+        .detail li p {
+            margin: 0;
+            padding: 0
+        }
+        
+        .detail li {
+            list-style: none
+        }
+        
+        .detail li p a {
+            position: relative;
+            top: 0;
+            left: 0
+        }
+        
+        .detail li p a:after,
+        .detail li p a:hover:after {
+            color: #333;
+            background: rgba(0, 0, 255, 0.1)
+        }
+        
+        .detail li p a:after {
+            content: "詳しく見る";
+            font-size: .85em;
+            height: 17px;
+            line-height: 17px;
+            padding: 4px 8px;
+            margin: 0 8px
+        }
+        
+        .detail li p a.open:after {
+            content: "閉じる"
+        }
+        
+        .detail li p a,
+        .child li {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1)
+        }
+        
+        .detail li a {
+            display: block;
+            padding: 8px 0;
+            font-weight: 700;
+            text-decoration: none
+        }
+        
+        #detail-1 {
+            display: none;
+            margin: 0;
+            padding: 0
+        }
+        
+        #detail-2 {
+            display: none;
+            margin: 0;
+            padding: 0
+        }
+        
+        #detail-3 {
+            display: none;
+            margin: 0;
+            padding: 0
+        }
+        
+        #detail-4 {
+            display: none;
+            margin: 0;
+            padding: 0
+        }
+        
+        #detail-5 {
+            display: none;
+            margin: 0;
+            padding: 0
+        }
+        
+        footer {
+            margin-top: 1em
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="velttext">
+            <div class="logo"><img class="logoimg" src="./img/logo.svg" alt="かたつむり大作戦ロゴ" ondragstart="return false;" oncontextmenu="return false;"></div>
+            <div class="btn"><a href="#effect">かたつむり大作戦とは？</a></div>
+        </div>
+    </header>
+    <nav>
+        <div class="navlogo">
+            <a href="#"><img src="./img/logo.svg" alt="かたつむり大作戦ロゴ" ondragstart="return false;" oncontextmenu="return false;"></a>
+        </div>
+        <div class="navicon"><span></span><span></span><span></span></div>
+        <ul id="menu">
+            <li><a href="#effect">趣旨</a></li>
+            <li><a href="#points">3箇条</a></li>
+            <li><a href="#share">共有する</a></li>
+            <li><a href="#news">ニュース</a></li>
+            <li><a href="#approval">賛同団体</a></li>
+            <li><a href="#distribution">配布場所</a></li>
+            <li><a href="#contact">問い合わせ先</a></li>
+        </ul>
+    </nav>
+    <div id="wrapper">
+        <div id="effect">
+            <h2>趣旨</h2>
+            <hr>
+            <p>我々サポーターは、自チームのホームスタジアムでの観戦、応援のみならず、アウェイスタジアムへも足を運び、その交通手段として公共交通機関以外にも自家用車等で遠征することが多くある中では、交通事故等に巻き込まれる危険も大きいと考えます。</p>
+            <p>新聞やニュースでも大きな交通事故が取り上げられる昨今、悲しい事故で大切な仲間を喪わずにすむように、今一度、交通安全、スタジアムでの安全を心掛け、互いに声を掛け合い意識を高めることが重要だと感じています。</p>
+            <p>そのような中で、我々京都サンガF.C.サポーターは、遠征等での交通安全、スタジアムでの安全を強く意識し、道中無事に過ごせる願いを込めたステッカーを作成、配布することで、交通安全の啓蒙活動をして行きたいと思います。</p>
+            <p>かたつむり大作戦！はゆっくり歩く“かたつむり”のように安全第一にサッカー観戦を楽しむ活動です。</p>
+        </div>
+        <div id="points">
+            <h2>かたつむり大作戦 3箇条</h2>
+            <hr><img src="./img/points.svg" alt="・運転手は無理をしない。・同乗者は無理をさせない。・後部座席もシートベルトを締める。"></div>
+        <p style="text-align:center;"><strong>愛するクラブの勝利を願うように、あなたが無事に帰ることを願う人がいます。<br> サッカーを愛する人すべてが安全に、観戦出来るようにかたつむり大作戦！にご参加ください。</strong></p>
+        <div id="share">
+            <h2>共有する</h2>
+            <hr>
+            <ul>
+                <li>
+                    <a href="http://twitter.com/intent/tweet?url=http://katatsumuri-d.com/&amp;text=私は交通安全運動の「%20%23かたつむり大作戦！%20」に賛同します！&amp;tw_p=tweetbutton" data-slimstat-tracking="true" data-slimstat-callback="true" data-slimstat-type="0"><img src="./img/twitter.svg" alt="twitter">twitter</a>
+                </li>
+                <li>
+                    <a href="http://www.facebook.com/sharer.php?src=bm&amp;u=http://katatsumuri-d.com/&amp;t=" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;" data-slimstat-tracking="true" data-slimstat-callback="true" data-slimstat-type="0"><img src="./img/facebook.svg" alt="Facebook">Facebook</a>
+                </li>
+                <li>
+                    <a href="http://line.me/R/msg/text/?私は交通安全運動の「かたつむり大作戦！」に賛同します！%0Ahttp://katatsumuri-d.com/" data-slimstat-tracking="true" data-slimstat-callback="true" data-slimstat-type="0"><img src="./img/LINE.svg" alt="LINE">LINE</a>
+                </li>
+                <li>
+                    <a href="mailto:?body=私は交通安全運動の「かたつむり大作戦！」に賛同します！%0Ahttp://katatsumuri-d.com/" data-slimstat-tracking="true" data-slimstat-callback="true" data-slimstat-type="0"><img src="./img/mail.svg" alt="mail">mail</a>
+                </li>
+            </ul>
+        </div>
+        <div id="news">
+            <h2>ニュースリリース</h2>
+            <hr>
+            <ul class="detail">
+                <li>
+                    <p><a class="accdetail" data-target="detail-2">かたつむり大作戦！クルマにも貼れるカッティングステッカー登場のお知らせ(2016.06.30)</a></p>
+                    <ul id="detail-2">
+                        <li>
+                            <p>かたつむり大作戦の活動を開始してから1年が経ちました。</p>
+                            <p>サンガのサポーターだけでなく、全国の多くのサポーターにこの活動を賛同していただきました。この場を借りてお礼を申し上げます。</p>
+                            <p>かたつむり大作戦！の啓蒙ツールとしてステッカーを配布しておりましたが、かねてよりクルマにも貼れるステッカーのご要望を頂いておりました。</p>
+                            <p>耐水性・耐候性のあるカッティングステッカーを制作しました。</p>
+                            <p>みなさまのクルマに貼り付けてより一層、安全運転・安全乗車に努めていただきたく思います。</p>
+                            <p>このステッカーを、7月10日（日）ｖｓ群馬戦で配布をしたいと思います。</p>
+                            <p>もちろん、通常タイプのステッカーも数には限りが有りますが配布致します。</p>
+                            <p>合わせてかたつむり大作戦！の賛同金も募集したいと思います。</p>
+                            <br>
+                            <p>■ステッカー配布概要（予定）</p>
+                            <p>場所：フレンズスクエア（サポ連ゲーフラブース）</p>
+                            <p>時間：16時30分～17時30分</p>
+                            <p>配布方法：ブースにいるスタッフにお声がけください。</p>
+                            <p>今後の継続的な活動の為に賛同金も受け付けています。ご協力の程よろしくお願い致します。</p>
+                            <br>
+                            <p>■賛同のお願い</p>
+                            <p>かたつむり大作戦！では、継続的に広くこの活動を広げていきたいので、この活動に賛同していただける方を募集しております。個人・企業・団体問いません。もちろん、応援するチームが違っても構いません。</p>
+                            <p>また、ステッカーの配布にご協力いただける、団体・店舗さんも募集しております。</p>
+                            <p>賛同いただいた方にはかたつむり大作戦！のHPに賛同団体一覧にお名前を出させていただきます。</p>
+                            <br>
+                            <p>■お問合せはコチラから</p>
+                            <p>webmaster@sanga-saporen.net</p>
+                            <p>かたつむり大作戦！事務局宛</p>
+                            <br>
+                            <p>これからも、安全な旅を通して愛するチームを支えていきましょう。</p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <p><a class="accdetail" data-target="detail-1">賛同ステッカー作成のお知らせ(2015.09.25)</a></p>
+                    <ul id="detail-1">
+                        <li>
+                            <p>この度、マリノスサポーター有志の皆さんによる「かたつむり大作戦！」へのご賛同ご協力で、青色のステッカーを作成していただきました。また、その一部を今後の活動に活用下さいとご提供いただきましたことをご報告致します。なお、ご提供いただいたステッカーの配布方法につきましては、後ほどご案内させていただきます。</p>
+                        </li>
+                    </ul>
+                </li>
+                <!--<li>
+                    <p><a class="accdetail" data-target="detail-2">タイトル(2015.mm.dd)</a></p>
+                    <ul id="detail-2">
+                        <li><p>本文</p></li>
+                    </ul>
+                </li>-->
+            </ul>
+        </div>
+        <div id="approval">
+            <h2>主な賛同団体<span style="font-size:small;">(敬称略)</span></h2>
+            <hr>
+            <ul>
+                <li><a href="http://purplesangacg.lekumo.biz/" target="_blank">京都パープルサンガ後援会</a></li>
+            </ul>
+            <ul>
+                <li><a href="https://twitter.com/verdistagoalura" target="_blank">VERDISTA(東京ヴェルディサポーター団体)</a></li>
+                <li><a href="https://twitter.com/avispa_kanto" target="_blank">アビスパ福岡 関東サポーターズ</a></li>
+                <li><a href="http://www.localfootball-japan.net/" target="_blank">Local Football Japan(メディア)</a></li>
+                <li><a href="http://z-blitz.com/" target="_blank">Z-BLITZ(ツエーゲン金沢サポーター団体)</a></li>
+                <li><a href="http://curvamachida.blog65.fc2.com/" target="_blank">CURVA MACHIDA(FC町田ゼルビアサポーター団体)</a></li>
+                <li><a href="http://www.gans.jp/" target="_blank">ULTRAS MATSUMOTO(松本山雅FCサポーター団体)</a></li>
+                <li><a href="http://ameblo.jp/um-est/" target="_blank">UMest(松本山雅FCサポーター団体)</a></li>
+                <li><a href="http://www3.to/busta" target="_blank">BUSTA(大分トリニータサポーター団体)</a></li>
+            </ul>
+        </div>
+        <div id="distribution">
+            <h2>ステッカー配布場所<span style="font-size:small;">(敬称略)</span></h2>
+            <hr>
+            <ul> 【京都府】
+                <li><a href="https://www.facebook.com/coteppan" target="_blank">鉄板居酒屋こてっぱん(京都府)</a></li>
+                <li><a href="https://www.facebook.com/masmasbuonfortuna/" target="_blank">ビストロ食堂 mas(京都府)</a></li>
+                <li><a href="https://twitter.com/shell_joyo" target="_blank">協和産業 昭和Shell城陽SS(京都府)</a></li>
+                <li><a href="http://www.sanga-fc.jp/other/supportshop/beauty_009/" target="_blank">TORONTO(京都府)</a></li> 【関西】
+                <li><a href="http://www.shukyudo.com/" target="_blank">サッカーショップ蹴球堂(大阪府)</a></li> 【関東】
+                <li><a href="http://kiten.jp/" target="_blank">スポーツ居酒屋KITEN! (東京都)</a></li>
+                <li><a href="http://r.gnavi.co.jp/j32u85mx0000/" target="_blank">北越谷 居酒屋 浦○ 【ＵＲＡＭＡＲＵ】（埼玉県）</a></li>
+                <li><a href="http://tienda-alegria.com/" target="_blank">Alegria (千葉県)</a></li>
+                <li><a href="http://www.sportscafe92.com/" target="_blank">Sports Cafe 92(栃木県)</a></li> 【九州】
+                <li><a href="http://www.fanatica.jp/" target="_blank">Fanatica(福岡県)</a></li> 【ネットショップ】
+                <li><a href="http://caldacasa.com/" target="_blank">Caldacasa(ネットショップ)</a></li>
+                <li><a href="http://lfjonline.buyshop.jp/" target="_blank">Local Football Japan(ネットショップ)</a></li>
+            </ul>
+            <p style="font-size:smaller">※配布が終了している場合もございます。予めご了承ください。</p>
+        </div>
+        <div id="contact">
+            <h2>問い合わせ先</h2>
+            <hr>
+            <p>京都サンガF.C.サポーター連合会 <a href="mailto:webmaster@sanga-saporen.net">webmaster@sanga-saporen.net</a></p>
+        </div>
+        <div id="twitterp">
+            <div id="twitter"><a class="twitter-timeline" href="https://twitter.com/hashtag/%E3%81%8B%E3%81%9F%E3%81%A4%E3%82%80%E3%82%8A%E5%A4%A7%E4%BD%9C%E6%88%A6" data-widget-id="633321259154018304" width="100%">#かたつむり大作戦 のツイート</a>
+                <script>
+                    ! function (d, s, id) {
+                        var js, fjs = d.getElementsByTagName(s)[0],
+                            p = /^http:/.test(d.location) ? 'http' : 'https';
+                        if (!d.getElementById(id)) {
+                            js = d.createElement(s);
+                            js.id = id;
+                            js.src = p + "://platform.twitter.com/widgets.js";
+                            fjs.parentNode.insertBefore(js, fjs);
+                        }
+                    }(document, "script", "twitter-wjs");
+                </script>
+            </div>
+        </div>
+    </div>
+    <footer><a href="http://www.sanga-saporen.net/" target="_blank">© 2015 Kyoto Sanga F.C. Supporter Confederation </a></footer>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            var headerHight = 60;
+            $('a[href^=#]').click(function () {
+                var href = $(this).attr("href");
+                var target = $(href == "#" || href == "" ? 'html' : href);
+                var position = target.offset().top - headerHight;
+                $("html, body").animate({
+                    scrollTop: position
+                }, 950, "swing");
+                return false;
+            });
+        });
+        $(function () {
+            var nav = $('nav');
+            var offsetTop = nav.offset().top;
+
+            var floatMenu = function () {
+                if ($(window).scrollTop() > offsetTop) {
+                    nav.addClass('fixed');
+                    nav.addClass('fixed');
+                } else {
+                    nav.removeClass('fixed');
+                }
+            }
+            $(window).scroll(floatMenu);
+            $('body').bind('touchmove', floatMenu);
+        });
+        window.onload = init;
+
+        function init() {
+            var elements = document.getElementsByClassName("logoimg");
+            for (var i = elements.length; i--;) {
+                disableDraggingFor(elements[i]);
+            }
+        }
+
+        function disableDraggingFor(element) {
+            element.draggable = false;
+            element.onmousedown = function (event) {
+                event.preventDefault();
+                return false;
+            };
+        }
+        $(document).ready(function ($) {
+            $(".navicon").on("click", function () {
+                $("#menu").toggleClass("active");
+                $(this).toggleClass("active");
+            });
+        });
+        $(window).load(function () {
+            function changeWidget() {
+                var twFrame = $('iframe.twitter-timeline');
+                if (twFrame.length > 0) {
+                    twFrame.contents()
+                        .find('head').append('<link href="twitter.css" rel="stylesheet" type="text/css" media="all" />');
+                } else {
+                    setTimeout(changeWidget, 1500);
+                }
+            }
+            changeWidget();
+        });
+        $(function () {
+            $('.accdetail').click(function () {
+                var target = $(this).data('target');
+
+                $('#' + target).slideToggle();
+
+
+                $(this).toggleClass('open');
+
+                return false;
+            });
+        });
+    </script>
+</body>
+
+</html>
