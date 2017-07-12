@@ -1,3 +1,4 @@
+<?php $news=json_decode(file_get_contents('news.json'),true)?>
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -21,7 +22,7 @@
     <meta name="twitter:title" content="かたつむり大作戦！ - 交通安全活動">
     <style>
         body {
-            font-family: "ヒラギノ角ゴ Pro W3", メイリオ, Osaka, Arial, Verdana, "ＭＳ Ｐゴシック", sans-serif
+            font-family: "小塚ゴシック Pro","ヒラギノ角ゴ Pro W3", メイリオ, Osaka, Arial, Verdana, "ＭＳ Ｐゴシック", sans-serif
         }
         
         html,
@@ -293,11 +294,17 @@
         }
         
         @media screen and (max-width:339px) {
+            body {
+                font-size: small;
+            }
             nav ul.active {
                 height: 90px
             }
             #effect {
                 margin-top: 90px
+            }
+            #approval>ul,#distribution>ul {
+                padding: 0;
             }
         }
         
@@ -376,34 +383,16 @@
             text-decoration: none
         }
         
-        #detail-1 {
+        .detail-column {
             display: none;
             margin: 0;
-            padding: 0
+            padding: 0;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            background: rgba(0, 0,0,.05);
+            border-radius: 15px;
         }
-        
-        #detail-2 {
-            display: none;
-            margin: 0;
-            padding: 0
-        }
-        
-        #detail-3 {
-            display: none;
-            margin: 0;
-            padding: 0
-        }
-        
-        #detail-4 {
-            display: none;
-            margin: 0;
-            padding: 0
-        }
-        
-        #detail-5 {
-            display: none;
-            margin: 0;
-            padding: 0
+        .detail-column>li{
+            margin:0 1em;
         }
         
         footer {
@@ -469,52 +458,18 @@
             <h2>ニュースリリース</h2>
             <hr>
             <ul class="detail">
+                <?php foreach (array_reverse($news) as $key => $column):?>
                 <li>
-                    <p><a class="accdetail" data-target="detail-2">かたつむり大作戦！クルマにも貼れるカッティングステッカー登場のお知らせ(2016.06.30)</a></p>
-                    <ul id="detail-2">
+                    <p><a class="accdetail" data-target="detail-<?=$key?>"><?=$column['title']?>(<?=$column['date']?>)</a></p>
+                    <ul class="detail-column" id="detail-<?=$key?>">
                         <li>
-                            <p>かたつむり大作戦の活動を開始してから1年が経ちました。</p>
-                            <p>サンガのサポーターだけでなく、全国の多くのサポーターにこの活動を賛同していただきました。この場を借りてお礼を申し上げます。</p>
-                            <p>かたつむり大作戦！の啓蒙ツールとしてステッカーを配布しておりましたが、かねてよりクルマにも貼れるステッカーのご要望を頂いておりました。</p>
-                            <p>耐水性・耐候性のあるカッティングステッカーを制作しました。</p>
-                            <p>みなさまのクルマに貼り付けてより一層、安全運転・安全乗車に努めていただきたく思います。</p>
-                            <p>このステッカーを、7月10日（日）ｖｓ群馬戦で配布をしたいと思います。</p>
-                            <p>もちろん、通常タイプのステッカーも数には限りが有りますが配布致します。</p>
-                            <p>合わせてかたつむり大作戦！の賛同金も募集したいと思います。</p>
-                            <br>
-                            <p>■ステッカー配布概要（予定）</p>
-                            <p>場所：フレンズスクエア（サポ連ゲーフラブース）</p>
-                            <p>時間：16時30分～17時30分</p>
-                            <p>配布方法：ブースにいるスタッフにお声がけください。</p>
-                            <p>今後の継続的な活動の為に賛同金も受け付けています。ご協力の程よろしくお願い致します。</p>
-                            <br>
-                            <p>■賛同のお願い</p>
-                            <p>かたつむり大作戦！では、継続的に広くこの活動を広げていきたいので、この活動に賛同していただける方を募集しております。個人・企業・団体問いません。もちろん、応援するチームが違っても構いません。</p>
-                            <p>また、ステッカーの配布にご協力いただける、団体・店舗さんも募集しております。</p>
-                            <p>賛同いただいた方にはかたつむり大作戦！のHPに賛同団体一覧にお名前を出させていただきます。</p>
-                            <br>
-                            <p>■お問合せはコチラから</p>
-                            <p>webmaster@sanga-saporen.net</p>
-                            <p>かたつむり大作戦！事務局宛</p>
-                            <br>
-                            <p>これからも、安全な旅を通して愛するチームを支えていきましょう。</p>
+                        <?php foreach ($column['text'] as $row):?>
+                            <p><?=$row?></p>
+                        <?php endforeach;?>
                         </li>
                     </ul>
                 </li>
-                <li>
-                    <p><a class="accdetail" data-target="detail-1">賛同ステッカー作成のお知らせ(2015.09.25)</a></p>
-                    <ul id="detail-1">
-                        <li>
-                            <p>この度、マリノスサポーター有志の皆さんによる「かたつむり大作戦！」へのご賛同ご協力で、青色のステッカーを作成していただきました。また、その一部を今後の活動に活用下さいとご提供いただきましたことをご報告致します。なお、ご提供いただいたステッカーの配布方法につきましては、後ほどご案内させていただきます。</p>
-                        </li>
-                    </ul>
-                </li>
-                <!--<li>
-                    <p><a class="accdetail" data-target="detail-2">タイトル(2015.mm.dd)</a></p>
-                    <ul id="detail-2">
-                        <li><p>本文</p></li>
-                    </ul>
-                </li>-->
+                <?php endforeach;?>
             </ul>
         </div>
         <div id="approval">
