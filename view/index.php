@@ -98,7 +98,7 @@
         <hr>
         <ul>
             <?php foreach ($approvals as $approval): ?>
-                <li><a href="<?= $approval['url'] ?>" target="_blank"><?= $approval['name'] ?></a></li>
+                <li><a href="<?= $approval['url'] ?? '' ?>" target="_blank"><?= $approval['name'] ?></a></li>
             <?php endforeach?>
         </ul>
     </div>
@@ -107,7 +107,7 @@
         <hr>
         <ul>
             <?php foreach ($distributions as $distribution): ?>
-                <li><a href="<?= $distribution['url'] ?>" target="_blank"><?= $distribution['name'] ?></a></li>
+                <li><a href="<?= $distribution['url'] ?? '' ?>" target="_blank"><?= $distribution['name'] ?></a></li>
             <?php endforeach?>
         </ul>
         <p style="font-size:smaller">※配布が終了している場合もございます。予めご了承ください。</p>
