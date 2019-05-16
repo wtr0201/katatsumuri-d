@@ -12,8 +12,8 @@
     <meta property="og:title" content="私は交通安全活動の「かたつむり大作戦！」に賛同します！">
     <meta property="og:site_name" content="かたつむり大作戦！ - 交通安全活動">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="http://katatsumuri-d.com/">
-    <meta property="og:image" content="http://katatsumuri-d.com/img/ogpimg.jpg">
+    <meta property="og:url" content="https://katatsumuri-d.com/">
+    <meta property="og:image" content="https://katatsumuri-d.com/img/ogpimg.jpg">
     <meta property="og:description" content='ゆっくり歩く"かたつむり"のように、安全第一にサッカー観戦を楽しむ活動「かたつむり大作戦！」です。'>
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@sanga_saporen">
@@ -62,16 +62,16 @@
         <hr>
         <ul>
             <li>
-                <a href="http://twitter.com/intent/tweet?url=http://katatsumuri-d.com/&amp;text=私は交通安全運動の「%20%23かたつむり大作戦！%20」に賛同します！&amp;tw_p=tweetbutton" data-slimstat-tracking="true" data-slimstat-callback="true" data-slimstat-type="0"><img src="./img/twitter.svg" alt="twitter">twitter</a>
+                <a href="https://twitter.com/intent/tweet?url=https://katatsumuri-d.com/&amp;text=私は交通安全運動の「%20%23かたつむり大作戦！%20」に賛同します！&amp;tw_p=tweetbutton" data-slimstat-tracking="true" data-slimstat-callback="true" data-slimstat-type="0"><img src="./img/twitter.svg" alt="twitter">twitter</a>
             </li>
             <li>
-                <a href="http://www.facebook.com/sharer.php?src=bm&amp;u=http://katatsumuri-d.com/&amp;t=" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;" data-slimstat-tracking="true" data-slimstat-callback="true" data-slimstat-type="0"><img src="./img/facebook.svg" alt="Facebook">Facebook</a>
+                <a href="https://www.facebook.com/sharer.php?src=bm&amp;u=https://katatsumuri-d.com/&amp;t=" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;" data-slimstat-tracking="true" data-slimstat-callback="true" data-slimstat-type="0"><img src="./img/facebook.svg" alt="Facebook">Facebook</a>
             </li>
             <li>
-                <a href="http://line.me/R/msg/text/?私は交通安全運動の「かたつむり大作戦！」に賛同します！%0Ahttp://katatsumuri-d.com/" data-slimstat-tracking="true" data-slimstat-callback="true" data-slimstat-type="0"><img src="./img/LINE.svg" alt="LINE">LINE</a>
+                <a href="https://line.me/R/msg/text/?私は交通安全運動の「かたつむり大作戦！」に賛同します！%0Ahttps://katatsumuri-d.com/" data-slimstat-tracking="true" data-slimstat-callback="true" data-slimstat-type="0"><img src="./img/LINE.svg" alt="LINE">LINE</a>
             </li>
             <li>
-                <a href="mailto:?body=私は交通安全運動の「かたつむり大作戦！」に賛同します！%0Ahttp://katatsumuri-d.com/" data-slimstat-tracking="true" data-slimstat-callback="true" data-slimstat-type="0"><img src="./img/mail.svg" alt="mail">mail</a>
+                <a href="mailto:?body=私は交通安全運動の「かたつむり大作戦！」に賛同します！%0Ahttps://katatsumuri-d.com/" data-slimstat-tracking="true" data-slimstat-callback="true" data-slimstat-type="0"><img src="./img/mail.svg" alt="mail">mail</a>
             </li>
         </ul>
     </div>
@@ -121,8 +121,8 @@
     //TODO:: ハッシュタグツイート一覧入れたい
     ?>
 </div>
-<footer><a href="http://www.sanga-saporen.net/" target="_blank">© 2015 Kyoto Sanga F.C. Supporter Confederation </a></footer>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+<footer><a href="https://www.sanga-saporen.net/" target="_blank">© 2015 Kyoto Sanga F.C. Supporter Confederation </a></footer>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
 <script type="text/javascript">
     $(function () {
         var headerHight = 60;
