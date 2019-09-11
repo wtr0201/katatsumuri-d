@@ -13,6 +13,7 @@
             <li><a href="#" v-scroll-to="'#points'">3箇条</a></li>
             <li><a href="#" v-scroll-to="'#share'">共有する</a></li>
             <li><a href="#" v-scroll-to="'#news'">ニュース</a></li>
+            <li><a href="#" v-scroll-to="'#donate'">賛同金</a></li>
             <li><a href="#" v-scroll-to="'#approval'">賛同団体</a></li>
             <li><a href="#" v-scroll-to="'#distribution'">配布場所</a></li>
             <li><a href="#" v-scroll-to="'#contact'">問い合わせ先</a></li>
@@ -63,6 +64,7 @@
             ul {
                 transition: height .15s .6s linear;
                 margin-top: 60px;
+                padding: 5px;
                 height: 0;
                 background-color: rgba(80, 80, 80, 1);
                 li {

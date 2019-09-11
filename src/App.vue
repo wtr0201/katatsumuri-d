@@ -8,6 +8,7 @@
         <Points></Points>
         <Share></Share>
         <News></News>
+        <Donate></Donate>
         <Approval></Approval>
         <Distribution></Distribution>
         <Contact></Contact>
@@ -21,6 +22,7 @@
     import Approval     from './components/Approval'
     import Contact      from './components/Contact'
     import Distribution from './components/Distribution'
+    import Donate       from './components/Donate'
     import Effect       from './components/Effect'
     import Footer       from './components/Footer'
     import Header       from './components/Header'
@@ -39,6 +41,7 @@ export default {
         Footer,
         Header,
         NavBar,
+        Donate,
         News,
         Points,
         Share
