@@ -1,24 +1,33 @@
-# katatsumuri-d
+# かたつむり大作戦HP
 
 ## Project setup
 ```
-yarn install
+npm install
 ```
 
-### Compiles and hot-reloads for development
+### 開発時：HMR
 ```
-yarn serve
+npm run serve
 ```
-
-### Compiles and minifies for production
-```
-yarn build
-```
+下記よりアクセス可能。  
+[http://localhost:8080]()
 
 ### Lints and fixes files
 ```
-yarn lint
+npm run lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### 本番公開 (build & deploy)
+```
+npm run prod
+```
+
+### 本番用ビルド・docsディレクトリへ展開
+```
+npm run build
+```
+
+### docsディレクトリをGitHubPagesにデプロイする(gh-pagesブランチにpush)
+```
+npm run deploy
+```
