@@ -9,7 +9,7 @@
                 </p>
                 <div class="detail-column" :class="{ open:isset(index) }">
                     <div class="message">
-                        <p v-for="(row, colIndex) in col.text" :key="colIndex">{{ row }}</p>
+                        <p v-for="(row, colIndex) in col.text" :key="colIndex" v-html="row"></p>
                     </div>
                 </div>
             </li>
@@ -97,7 +97,7 @@
                     }
                 }
                 &.open {
-                    max-height: 1000px;
+                    max-height: 5000px;
                 }
             }
         }
