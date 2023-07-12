@@ -95,6 +95,9 @@
                     p {
                         min-height: 1.5rem;
                     }
+                    img {
+                      max-width: 100%;
+                    }
                 }
                 &.open {
                     max-height: 5000px;
