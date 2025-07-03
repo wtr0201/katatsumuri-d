@@ -52,7 +52,7 @@ export default {
 <style lang="scss">
 body {
   font-family: "小塚ゴシック Pro", "ヒラギノ角ゴ Pro W3", メイリオ, Osaka, Arial, Verdana, "ＭＳ Ｐゴシック", sans-serif;
-  background: #009d41 center fixed;
+  background: #006e3f center fixed;
   background-size: contain;
 }
 
