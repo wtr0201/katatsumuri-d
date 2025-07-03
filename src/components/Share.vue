@@ -4,7 +4,7 @@
         <hr>
         <ul>
             <li>
-                <a href="https://twitter.com/intent/tweet?url=https://katatsumuri-d.com/&amp;text=私は交通安全運動の「%20%23かたつむり大作戦！%20」に賛同します！&amp;tw_p=tweetbutton" data-slimstat-tracking="true" data-slimstat-callback="true" data-slimstat-type="0"><img src="../assets/img/twitter.svg" alt="twitter">twitter</a>
+                <a href="https://twitter.com/intent/tweet?url=https://katatsumuri-d.com/&amp;text=私は交通安全運動の「%20%23かたつむり大作戦！%20」に賛同します！&amp;tw_p=tweetbutton" data-slimstat-tracking="true" data-slimstat-callback="true" data-slimstat-type="0"><img src="../assets/img/x.svg" alt="X">X</a>
             </li>
             <li>
                 <a href="https://www.facebook.com/sharer.php?src=bm&amp;u=https://katatsumuri-d.com/&amp;t=" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;" data-slimstat-tracking="true" data-slimstat-callback="true" data-slimstat-type="0"><img src="../assets/img/facebook.svg" alt="Facebook">Facebook</a>
