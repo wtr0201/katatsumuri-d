@@ -14,9 +14,14 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: yarn
+
       - name: Yarn
         run: |
-          yarn
+          yarn install --frozen-lockfile
           yarn build
 
       - name: Deploy
